@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -93,7 +93,7 @@ public class MostrarVistaPosiciónGlobalView implements Serializable {
         listaLPPs = new ArrayList<>(Arrays.asList(new LPPView()));
         listaLPPsNoRelacionados = new ArrayList<>(Arrays.asList(new LPPView()));
     }
-
+    
     public List<CuentasView> getListaCuentas() {
         return listaCuentas;
     }

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,34 +14,36 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class PlanesView implements Serializable {
+public class CuentasView implements Serializable {
 
-    String numeroDePlan;
+    String numeroDeCuenta;
     String alias;
-    ImporteMonetarioView derechoConsolidado;
+    ImporteMonetarioView saldoReal;
+    ImporteMonetarioView saldoDisponible;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
     String nombreProductoComercial;
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public PlanesView() {
-        numeroDePlan = "17789201051626";
-        alias = "PLAN DE PENSIONES CAJAMADRID RENT";
-        derechoConsolidado = new ImporteMonetarioView();
+    public CuentasView() {
+        numeroDeCuenta = "ES9120380000060320012667";
+        alias = "Mi cuenta";
+        saldoReal = new ImporteMonetarioView();
+        saldoDisponible = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Bankia Planes de pensiones";
+        nombreProductoComercial = "Cuenta corriente";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroDePlan() {
-        return numeroDePlan;
+    public String getNumeroDeCuenta() {
+        return numeroDeCuenta;
     }
 
-    public void setNumeroDePlan(String numeroDePlan) {
-        this.numeroDePlan = numeroDePlan;
+    public void setNumeroDeCuenta(String numeroDeCuenta) {
+        this.numeroDeCuenta = numeroDeCuenta;
     }
 
     public String getAlias() {
@@ -52,12 +54,20 @@ public class PlanesView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getDerechoConsolidado() {
-        return derechoConsolidado;
+    public ImporteMonetarioView getSaldoReal() {
+        return saldoReal;
     }
 
-    public void setDerechoConsolidado(ImporteMonetarioView derechoConsolidado) {
-        this.derechoConsolidado = derechoConsolidado;
+    public void setSaldoReal(ImporteMonetarioView saldoReal) {
+        this.saldoReal = saldoReal;
+    }
+
+    public ImporteMonetarioView getSaldoDisponible() {
+        return saldoDisponible;
+    }
+
+    public void setSaldoDisponible(ImporteMonetarioView saldoDisponible) {
+        this.saldoDisponible = saldoDisponible;
     }
 
     public Boolean isSaldoInformado() {

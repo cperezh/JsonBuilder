@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,34 +14,36 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class CarterasView implements Serializable {
+public class PrestamosView implements Serializable {
 
-    String numeroCartera;
+    String numeroPrestamo;
     String alias;
-    ImporteMonetarioView limite;
+    ImporteMonetarioView capitalConcedido;
+    ImporteMonetarioView deudaPendiente;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
     String nombreProductoComercial;
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public CarterasView() {
-        numeroCartera = "000012341234561234123412";
-        alias = "Mi cartera personal";
-        limite = new ImporteMonetarioView();
+    public PrestamosView() {
+        numeroPrestamo = "01000088833";
+        alias = "Préstamo coche";
+        capitalConcedido = new ImporteMonetarioView();
+        deudaPendiente = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Cartera de Bankia";
+        nombreProductoComercial = "Préstamos Bankia";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroCartera() {
-        return numeroCartera;
+    public String getNumeroPrestamo() {
+        return numeroPrestamo;
     }
 
-    public void setNumeroCartera(String numeroCartera) {
-        this.numeroCartera = numeroCartera;
+    public void setNumeroPrestamo(String numeroPrestamo) {
+        this.numeroPrestamo = numeroPrestamo;
     }
 
     public String getAlias() {
@@ -52,12 +54,20 @@ public class CarterasView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getLimite() {
-        return limite;
+    public ImporteMonetarioView getCapitalConcedido() {
+        return capitalConcedido;
     }
 
-    public void setLimite(ImporteMonetarioView limite) {
-        this.limite = limite;
+    public void setCapitalConcedido(ImporteMonetarioView capitalConcedido) {
+        this.capitalConcedido = capitalConcedido;
+    }
+
+    public ImporteMonetarioView getDeudaPendiente() {
+        return deudaPendiente;
+    }
+
+    public void setDeudaPendiente(ImporteMonetarioView deudaPendiente) {
+        this.deudaPendiente = deudaPendiente;
     }
 
     public Boolean isSaldoInformado() {

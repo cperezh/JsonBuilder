@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,11 +14,10 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class CuentasView implements Serializable {
+public class FondosView implements Serializable {
 
-    String numeroDeCuenta;
+    String numeroFondo;
     String alias;
-    ImporteMonetarioView saldoReal;
     ImporteMonetarioView saldoDisponible;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
@@ -26,24 +25,23 @@ public class CuentasView implements Serializable {
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public CuentasView() {
-        numeroDeCuenta = "ES9120380000060320012667";
-        alias = "Mi cuenta";
-        saldoReal = new ImporteMonetarioView();
+    public FondosView() {
+        numeroFondo = "102000002858";
+        alias = "MADRID GESTION ACTIVA 25";
         saldoDisponible = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Cuenta corriente";
+        nombreProductoComercial = "Bankia Fondos";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroDeCuenta() {
-        return numeroDeCuenta;
+    public String getNumeroFondo() {
+        return numeroFondo;
     }
 
-    public void setNumeroDeCuenta(String numeroDeCuenta) {
-        this.numeroDeCuenta = numeroDeCuenta;
+    public void setNumeroFondo(String numeroFondo) {
+        this.numeroFondo = numeroFondo;
     }
 
     public String getAlias() {
@@ -52,14 +50,6 @@ public class CuentasView implements Serializable {
 
     public void setAlias(String alias) {
         this.alias = alias;
-    }
-
-    public ImporteMonetarioView getSaldoReal() {
-        return saldoReal;
-    }
-
-    public void setSaldoReal(ImporteMonetarioView saldoReal) {
-        this.saldoReal = saldoReal;
     }
 
     public ImporteMonetarioView getSaldoDisponible() {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;

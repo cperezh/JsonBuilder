@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,34 +14,34 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class LineaDeTesoreriasView implements Serializable {
+public class CarterasView implements Serializable {
 
-    String numeroLineaDeTesoreria;
+    String numeroCartera;
     String alias;
-    ImporteMonetarioView saldoDisponible;
+    ImporteMonetarioView limite;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
     String nombreProductoComercial;
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public LineaDeTesoreriasView() {
-        numeroLineaDeTesoreria = "000012341234561234123412";
-        alias = "";
-        saldoDisponible = new ImporteMonetarioView();
+    public CarterasView() {
+        numeroCartera = "000012341234561234123412";
+        alias = "Mi cartera personal";
+        limite = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Línea de tesorerías de Bankia";
+        nombreProductoComercial = "Cartera de Bankia";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroLineaDeTesoreria() {
-        return numeroLineaDeTesoreria;
+    public String getNumeroCartera() {
+        return numeroCartera;
     }
 
-    public void setNumeroLineaDeTesoreria(String numeroLineaDeTesoreria) {
-        this.numeroLineaDeTesoreria = numeroLineaDeTesoreria;
+    public void setNumeroCartera(String numeroCartera) {
+        this.numeroCartera = numeroCartera;
     }
 
     public String getAlias() {
@@ -52,12 +52,12 @@ public class LineaDeTesoreriasView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getSaldoDisponible() {
-        return saldoDisponible;
+    public ImporteMonetarioView getLimite() {
+        return limite;
     }
 
-    public void setSaldoDisponible(ImporteMonetarioView saldoDisponible) {
-        this.saldoDisponible = saldoDisponible;
+    public void setLimite(ImporteMonetarioView limite) {
+        this.limite = limite;
     }
 
     public Boolean isSaldoInformado() {

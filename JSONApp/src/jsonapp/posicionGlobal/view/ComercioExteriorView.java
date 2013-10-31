@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,34 +14,36 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class LineaDeAvalesView implements Serializable {
+public class ComercioExteriorView implements Serializable {
 
-    String numeroLineaDeAvales;
+    String numeroComercioExterior;
     String alias;
-    ImporteMonetarioView saldoDisponible;
+    ImporteMonetarioView limite;
+    ImporteMonetarioView importeUtilizado;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
     String nombreProductoComercial;
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public LineaDeAvalesView() {
-        numeroLineaDeAvales = "000012341234561234123412";
-        alias = "Mi línea de avales";
-        saldoDisponible = new ImporteMonetarioView();
+    public ComercioExteriorView() {
+        numeroComercioExterior = "000012341234561234123412";
+        alias = "Mi cuenta de comercio exterior";
+        limite = new ImporteMonetarioView();
+        importeUtilizado = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Línea de avales de bankia";
+        nombreProductoComercial = "Cuenta de comercio exterior";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroLineaDeAvales() {
-        return numeroLineaDeAvales;
+    public String getNumeroComercioExterior() {
+        return numeroComercioExterior;
     }
 
-    public void setNumeroLineaDeAvales(String numeroLineaDeAvales) {
-        this.numeroLineaDeAvales = numeroLineaDeAvales;
+    public void setNumeroComercioExterior(String numeroComercioExterior) {
+        this.numeroComercioExterior = numeroComercioExterior;
     }
 
     public String getAlias() {
@@ -52,12 +54,20 @@ public class LineaDeAvalesView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getSaldoDisponible() {
-        return saldoDisponible;
+    public ImporteMonetarioView getLimite() {
+        return limite;
     }
 
-    public void setSaldoDisponible(ImporteMonetarioView saldoDisponible) {
-        this.saldoDisponible = saldoDisponible;
+    public void setLimite(ImporteMonetarioView limite) {
+        this.limite = limite;
+    }
+
+    public ImporteMonetarioView getImporteUtilizado() {
+        return importeUtilizado;
+    }
+
+    public void setImporteUtilizado(ImporteMonetarioView importeUtilizado) {
+        this.importeUtilizado = importeUtilizado;
     }
 
     public Boolean isSaldoInformado() {

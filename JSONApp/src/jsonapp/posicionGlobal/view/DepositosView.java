@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,11 +14,11 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class TarjetasView implements Serializable {
+public class DepositosView implements Serializable {
 
-    String numeroDeTarjeta;
+    String numeroDeDeposito;
     String alias;
-    ImporteMonetarioView limiteCredito;
+    ImporteMonetarioView saldoReal;
     ImporteMonetarioView saldoDisponible;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
@@ -26,24 +26,24 @@ public class TarjetasView implements Serializable {
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public TarjetasView() {
-        numeroDeTarjeta = "4621462146214621";
-        alias = "Mi cuenta";
-        limiteCredito = new ImporteMonetarioView();
+    public DepositosView() {
+        numeroDeDeposito = "17789201051743";
+        alias = "Deposito compartido";
+        saldoReal = new ImporteMonetarioView();
         saldoDisponible = new ImporteMonetarioView();
-        saldoInformado = true;
+        saldoInformado = false;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Cuenta corriente";
+        nombreProductoComercial = "Bankia Depósitos";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroDeTarjeta() {
-        return numeroDeTarjeta;
+    public String getNumeroDeDeposito() {
+        return numeroDeDeposito;
     }
 
-    public void setNumeroDeTarjeta(String numeroDeTarjeta) {
-        this.numeroDeTarjeta = numeroDeTarjeta;
+    public void setNumeroDeDeposito(String numeroDeDeposito) {
+        this.numeroDeDeposito = numeroDeDeposito;
     }
 
     public String getAlias() {
@@ -54,12 +54,12 @@ public class TarjetasView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getLimiteCredito() {
-        return limiteCredito;
+    public ImporteMonetarioView getSaldoReal() {
+        return saldoReal;
     }
 
-    public void setLimiteCredito(ImporteMonetarioView limiteCredito) {
-        this.limiteCredito = limiteCredito;
+    public void setSaldoReal(ImporteMonetarioView saldoReal) {
+        this.saldoReal = saldoReal;
     }
 
     public ImporteMonetarioView getSaldoDisponible() {

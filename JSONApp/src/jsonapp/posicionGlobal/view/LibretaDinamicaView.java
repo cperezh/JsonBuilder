@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,36 +14,34 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class PrestamosView implements Serializable {
+public class LibretaDinamicaView implements Serializable {
 
-    String numeroPrestamo;
+    String numeroLibretaDinamica;
     String alias;
-    ImporteMonetarioView capitalConcedido;
-    ImporteMonetarioView deudaPendiente;
+    ImporteMonetarioView saldoDisponible;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
     String nombreProductoComercial;
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public PrestamosView() {
-        numeroPrestamo = "01000088833";
-        alias = "Préstamo coche";
-        capitalConcedido = new ImporteMonetarioView();
-        deudaPendiente = new ImporteMonetarioView();
+    public LibretaDinamicaView() {
+        numeroLibretaDinamica = "000012341234561234123412";
+        alias = "Mi libreta dinámica";
+        saldoDisponible = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Préstamos Bankia";
+        nombreProductoComercial = "Libreta dinámica de Bankia";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroPrestamo() {
-        return numeroPrestamo;
+    public String getNumeroLibretaDinamica() {
+        return numeroLibretaDinamica;
     }
 
-    public void setNumeroPrestamo(String numeroPrestamo) {
-        this.numeroPrestamo = numeroPrestamo;
+    public void setNumeroLibretaDinamica(String numeroLibretaDinamica) {
+        this.numeroLibretaDinamica = numeroLibretaDinamica;
     }
 
     public String getAlias() {
@@ -54,20 +52,12 @@ public class PrestamosView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getCapitalConcedido() {
-        return capitalConcedido;
+    public ImporteMonetarioView getSaldoDisponible() {
+        return saldoDisponible;
     }
 
-    public void setCapitalConcedido(ImporteMonetarioView capitalConcedido) {
-        this.capitalConcedido = capitalConcedido;
-    }
-
-    public ImporteMonetarioView getDeudaPendiente() {
-        return deudaPendiente;
-    }
-
-    public void setDeudaPendiente(ImporteMonetarioView deudaPendiente) {
-        this.deudaPendiente = deudaPendiente;
+    public void setSaldoDisponible(ImporteMonetarioView saldoDisponible) {
+        this.saldoDisponible = saldoDisponible;
     }
 
     public Boolean isSaldoInformado() {

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,11 +14,10 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class DepositosView implements Serializable {
+public class LineaDeAvalesView implements Serializable {
 
-    String numeroDeDeposito;
+    String numeroLineaDeAvales;
     String alias;
-    ImporteMonetarioView saldoReal;
     ImporteMonetarioView saldoDisponible;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
@@ -26,24 +25,23 @@ public class DepositosView implements Serializable {
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public DepositosView() {
-        numeroDeDeposito = "17789201051743";
-        alias = "Deposito compartido";
-        saldoReal = new ImporteMonetarioView();
+    public LineaDeAvalesView() {
+        numeroLineaDeAvales = "000012341234561234123412";
+        alias = "Mi línea de avales";
         saldoDisponible = new ImporteMonetarioView();
-        saldoInformado = false;
+        saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Bankia Depósitos";
+        nombreProductoComercial = "Línea de avales de bankia";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroDeDeposito() {
-        return numeroDeDeposito;
+    public String getNumeroLineaDeAvales() {
+        return numeroLineaDeAvales;
     }
 
-    public void setNumeroDeDeposito(String numeroDeDeposito) {
-        this.numeroDeDeposito = numeroDeDeposito;
+    public void setNumeroLineaDeAvales(String numeroLineaDeAvales) {
+        this.numeroLineaDeAvales = numeroLineaDeAvales;
     }
 
     public String getAlias() {
@@ -52,14 +50,6 @@ public class DepositosView implements Serializable {
 
     public void setAlias(String alias) {
         this.alias = alias;
-    }
-
-    public ImporteMonetarioView getSaldoReal() {
-        return saldoReal;
-    }
-
-    public void setSaldoReal(ImporteMonetarioView saldoReal) {
-        this.saldoReal = saldoReal;
     }
 
     public ImporteMonetarioView getSaldoDisponible() {

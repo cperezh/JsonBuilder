@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,34 +14,34 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class LibretaDinamicaView implements Serializable {
+public class AvalesView implements Serializable {
 
-    String numeroLibretaDinamica;
+    String numeroAval;
     String alias;
-    ImporteMonetarioView saldoDisponible;
+    ImporteMonetarioView importeAvalado;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
     String nombreProductoComercial;
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public LibretaDinamicaView() {
-        numeroLibretaDinamica = "000012341234561234123412";
-        alias = "Mi libreta dinámica";
-        saldoDisponible = new ImporteMonetarioView();
+    public AvalesView() {
+        numeroAval = "00934037384";
+        alias = "Mi aval";
+        importeAvalado = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Libreta dinámica de Bankia";
+        nombreProductoComercial = "Bankia Avales";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroLibretaDinamica() {
-        return numeroLibretaDinamica;
+    public String getNumeroAval() {
+        return numeroAval;
     }
 
-    public void setNumeroLibretaDinamica(String numeroLibretaDinamica) {
-        this.numeroLibretaDinamica = numeroLibretaDinamica;
+    public void setNumeroAval(String numeroAval) {
+        this.numeroAval = numeroAval;
     }
 
     public String getAlias() {
@@ -52,12 +52,12 @@ public class LibretaDinamicaView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getSaldoDisponible() {
-        return saldoDisponible;
+    public ImporteMonetarioView getImporteAvalado() {
+        return importeAvalado;
     }
 
-    public void setSaldoDisponible(ImporteMonetarioView saldoDisponible) {
-        this.saldoDisponible = saldoDisponible;
+    public void setImporteAvalado(ImporteMonetarioView importeAvalado) {
+        this.importeAvalado = importeAvalado;
     }
 
     public Boolean isSaldoInformado() {
@@ -101,4 +101,5 @@ public class LibretaDinamicaView implements Serializable {
         this.codigoProductoCPP = codigoProductoCPP;
     }
 
+  
 }

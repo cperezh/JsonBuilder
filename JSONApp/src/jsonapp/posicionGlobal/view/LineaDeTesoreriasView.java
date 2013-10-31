@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,34 +14,34 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class AvalesView implements Serializable {
+public class LineaDeTesoreriasView implements Serializable {
 
-    String numeroAval;
+    String numeroLineaDeTesoreria;
     String alias;
-    ImporteMonetarioView importeAvalado;
+    ImporteMonetarioView saldoDisponible;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
     String nombreProductoComercial;
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public AvalesView() {
-        numeroAval = "00934037384";
-        alias = "Mi aval";
-        importeAvalado = new ImporteMonetarioView();
+    public LineaDeTesoreriasView() {
+        numeroLineaDeTesoreria = "000012341234561234123412";
+        alias = "";
+        saldoDisponible = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Bankia Avales";
+        nombreProductoComercial = "Línea de tesorerías de Bankia";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroAval() {
-        return numeroAval;
+    public String getNumeroLineaDeTesoreria() {
+        return numeroLineaDeTesoreria;
     }
 
-    public void setNumeroAval(String numeroAval) {
-        this.numeroAval = numeroAval;
+    public void setNumeroLineaDeTesoreria(String numeroLineaDeTesoreria) {
+        this.numeroLineaDeTesoreria = numeroLineaDeTesoreria;
     }
 
     public String getAlias() {
@@ -52,12 +52,12 @@ public class AvalesView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getImporteAvalado() {
-        return importeAvalado;
+    public ImporteMonetarioView getSaldoDisponible() {
+        return saldoDisponible;
     }
 
-    public void setImporteAvalado(ImporteMonetarioView importeAvalado) {
-        this.importeAvalado = importeAvalado;
+    public void setSaldoDisponible(ImporteMonetarioView saldoDisponible) {
+        this.saldoDisponible = saldoDisponible;
     }
 
     public Boolean isSaldoInformado() {
@@ -101,5 +101,4 @@ public class AvalesView implements Serializable {
         this.codigoProductoCPP = codigoProductoCPP;
     }
 
-  
 }

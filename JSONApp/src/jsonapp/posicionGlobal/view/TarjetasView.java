@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jsonapp.views;
+package jsonapp.posicionGlobal.view;
 
 import java.io.Serializable;
 import jsonapp.views.utils.CodigoProductoView;
@@ -14,36 +14,36 @@ import org.codehaus.jackson.annotate.JsonIgnore;
  *
  * @author carlos.perez
  */
-public class ComercioExteriorView implements Serializable {
+public class TarjetasView implements Serializable {
 
-    String numeroComercioExterior;
+    String numeroDeTarjeta;
     String alias;
-    ImporteMonetarioView limite;
-    ImporteMonetarioView importeUtilizado;
+    ImporteMonetarioView limiteCredito;
+    ImporteMonetarioView saldoDisponible;
     Boolean saldoInformado;
     CodigoProductoView codigoProductoComercial;
     String nombreProductoComercial;
     String codigoProductoUrsus;
     String codigoProductoCPP;
 
-    public ComercioExteriorView() {
-        numeroComercioExterior = "000012341234561234123412";
-        alias = "Mi cuenta de comercio exterior";
-        limite = new ImporteMonetarioView();
-        importeUtilizado = new ImporteMonetarioView();
+    public TarjetasView() {
+        numeroDeTarjeta = "4621462146214621";
+        alias = "Mi cuenta";
+        limiteCredito = new ImporteMonetarioView();
+        saldoDisponible = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
-        nombreProductoComercial = "Cuenta de comercio exterior";
+        nombreProductoComercial = "Cuenta corriente";
         codigoProductoUrsus = "0000";
         codigoProductoCPP = "1111";
     }
 
-    public String getNumeroComercioExterior() {
-        return numeroComercioExterior;
+    public String getNumeroDeTarjeta() {
+        return numeroDeTarjeta;
     }
 
-    public void setNumeroComercioExterior(String numeroComercioExterior) {
-        this.numeroComercioExterior = numeroComercioExterior;
+    public void setNumeroDeTarjeta(String numeroDeTarjeta) {
+        this.numeroDeTarjeta = numeroDeTarjeta;
     }
 
     public String getAlias() {
@@ -54,20 +54,20 @@ public class ComercioExteriorView implements Serializable {
         this.alias = alias;
     }
 
-    public ImporteMonetarioView getLimite() {
-        return limite;
+    public ImporteMonetarioView getLimiteCredito() {
+        return limiteCredito;
     }
 
-    public void setLimite(ImporteMonetarioView limite) {
-        this.limite = limite;
+    public void setLimiteCredito(ImporteMonetarioView limiteCredito) {
+        this.limiteCredito = limiteCredito;
     }
 
-    public ImporteMonetarioView getImporteUtilizado() {
-        return importeUtilizado;
+    public ImporteMonetarioView getSaldoDisponible() {
+        return saldoDisponible;
     }
 
-    public void setImporteUtilizado(ImporteMonetarioView importeUtilizado) {
-        this.importeUtilizado = importeUtilizado;
+    public void setSaldoDisponible(ImporteMonetarioView saldoDisponible) {
+        this.saldoDisponible = saldoDisponible;
     }
 
     public Boolean isSaldoInformado() {
