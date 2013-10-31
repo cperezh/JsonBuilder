@@ -27,7 +27,7 @@ public class AvalesView implements Serializable {
 
     public AvalesView() {
         numeroAval = "00934037384";
-        alias = "Mi aval de préstamo";
+        alias = "Mi aval";
         importeAvalado = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();
