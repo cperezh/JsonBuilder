@@ -57,9 +57,11 @@ public class MostrarVistaPosiciónGlobalView implements Serializable {
         listaCuentas = new ArrayList<>(Arrays.asList(new CuentasView()));
         listaCuentasNoRelacionadas = new ArrayList<>(Arrays.asList(new CuentasView()));
         listaFondos = new ArrayList<>(Arrays.asList(new FondosView()));
-        listaFondosNoRelacionados =  new ArrayList<>(Arrays.asList(new FondosView()));
+        //listaFondosNoRelacionados =  new ArrayList<>(Arrays.asList(new FondosView()));
+        listaFondosNoRelacionados = new ArrayList<>();
         listaCuentasExtranjero = new ArrayList<>(Arrays.asList(new CuentasView()));
-        listaCuentasExtranjeroNoRelacionadas = new ArrayList<>(Arrays.asList(new CuentasView()));
+        //listaCuentasExtranjeroNoRelacionadas = new ArrayList<>(Arrays.asList(new CuentasView()));
+        listaCuentasExtranjeroNoRelacionadas = new ArrayList<>();
         listaPlazosEnDivisas = new ArrayList<>(Arrays.asList(new DepositosView()));
         listaPlazosEnDivisasNoRelacionados = new ArrayList<>(Arrays.asList(new DepositosView()));
         listaTarjetas = new ArrayList<>(Arrays.asList(new TarjetasView()));
