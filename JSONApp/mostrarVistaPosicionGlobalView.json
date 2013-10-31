@@ -1,0 +1,560 @@
+{
+  "listaCuentas" : [ {
+    "numeroDeCuenta" : "ES9120380000060320012667",
+    "alias" : "Mi cuenta",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cuenta corriente",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaCuentasNoRelacionadas" : [ {
+    "numeroDeCuenta" : "ES9120380000060320012667",
+    "alias" : "Mi cuenta",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cuenta corriente",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaFondos" : [ {
+    "numeroFondo" : "102000002858",
+    "alias" : "MADRID GESTION ACTIVA 25",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Bankia Fondos",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaFondosNoRelacionados" : [ {
+    "numeroFondo" : "102000002858",
+    "alias" : "MADRID GESTION ACTIVA 25",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Bankia Fondos",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaCuentasExtranjero" : [ {
+    "numeroDeCuenta" : "ES9120380000060320012667",
+    "alias" : "Mi cuenta",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cuenta corriente",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaCuentasExtranjeroNoRelacionadas" : [ {
+    "numeroDeCuenta" : "ES9120380000060320012667",
+    "alias" : "Mi cuenta",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cuenta corriente",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaPlazosEnDivisas" : [ {
+    "numeroDeDeposito" : "17789201051743",
+    "alias" : "Deposito compartido",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : false,
+    "nombreProductoComercial" : "Bankia Depósitos",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaPlazosEnDivisasNoRelacionados" : [ {
+    "numeroDeDeposito" : "17789201051743",
+    "alias" : "Deposito compartido",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : false,
+    "nombreProductoComercial" : "Bankia Depósitos",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaTarjetas" : [ {
+    "numeroDeTarjeta" : "4621462146214621",
+    "alias" : "Mi cuenta",
+    "limiteCredito" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cuenta corriente",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaTarjetasNoRelacionadas" : [ {
+    "numeroDeTarjeta" : "4621462146214621",
+    "alias" : "Mi cuenta",
+    "limiteCredito" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cuenta corriente",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaValores" : [ {
+    "numeroDeValor" : "060520014144",
+    "alias" : "CUENTA VALORES Individual",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Bankia Valores",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaValoresNoRelacionados" : [ {
+    "numeroDeValor" : "060520014144",
+    "alias" : "CUENTA VALORES Individual",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Bankia Valores",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaPlanesDePensiones" : [ {
+    "numeroDePlan" : "17789201051626",
+    "alias" : "PLAN DE PENSIONES CAJAMADRID RENT",
+    "derechoConsolidado" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Bankia Planes de pensiones",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaPlanesDePensionesNoRelacionados" : [ {
+    "numeroDePlan" : "17789201051626",
+    "alias" : "PLAN DE PENSIONES CAJAMADRID RENT",
+    "derechoConsolidado" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Bankia Planes de pensiones",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaCartera" : [ {
+    "numeroCartera" : "000012341234561234123412",
+    "alias" : "Mi cartera",
+    "limite" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cartera de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaCarteraNoRelacionadas" : [ {
+    "numeroCartera" : "000012341234561234123412",
+    "alias" : "Mi cartera",
+    "limite" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cartera de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaPrestamos" : [ {
+    "numeroPrestamo" : "01000088833",
+    "alias" : "Préstamo coche",
+    "capitalConcedido" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "deudaPendiente" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Préstamos Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaPrestamosNoRelacionados" : [ {
+    "numeroPrestamo" : "01000088833",
+    "alias" : "Préstamo coche",
+    "capitalConcedido" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "deudaPendiente" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Préstamos Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaDepositosPlazo" : [ {
+    "numeroDeDeposito" : "17789201051743",
+    "alias" : "Deposito compartido",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : false,
+    "nombreProductoComercial" : "Bankia Depósitos",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaDepositosPlazoNoRelacionados" : [ {
+    "numeroDeDeposito" : "17789201051743",
+    "alias" : "Deposito compartido",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : false,
+    "nombreProductoComercial" : "Bankia Depósitos",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaDepositosFinanciero" : [ {
+    "numeroDeDeposito" : "17789201051743",
+    "alias" : "Deposito compartido",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : false,
+    "nombreProductoComercial" : "Bankia Depósitos",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaDepositosFinancieroNoRelacionados" : [ {
+    "numeroDeDeposito" : "17789201051743",
+    "alias" : "Deposito compartido",
+    "saldoReal" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : false,
+    "nombreProductoComercial" : "Bankia Depósitos",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaComercioExterior" : [ {
+    "numeroComercioExterior" : "000012341234561234123412",
+    "alias" : "Mi cuenta de comercio exterior",
+    "limite" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "importeUtilizado" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cuenta de comercio exterior",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaComercioExteriorNoRelacionados" : [ {
+    "numeroComercioExterior" : "000012341234561234123412",
+    "alias" : "Mi cuenta de comercio exterior",
+    "limite" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "importeUtilizado" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cuenta de comercio exterior",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaLineasDeTesoreria" : [ {
+    "numeroLineaDeTesoreria" : "000012341234561234123412",
+    "alias" : "",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Línea de tesorerías de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaLineasDeTesoreriaNoRelacionadas" : [ {
+    "numeroLineaDeTesoreria" : "000012341234561234123412",
+    "alias" : "",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Línea de tesorerías de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaAvales" : [ {
+    "numeroAval" : "00934037384",
+    "alias" : "Mi aval",
+    "importeAvalado" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Bankia Avales",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaAvalesNoRelacionados" : [ {
+    "numeroAval" : "00934037384",
+    "alias" : "Mi aval",
+    "importeAvalado" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Bankia Avales",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaLineasDeAval" : [ {
+    "numeroLineaDeAvales" : "000012341234561234123412",
+    "alias" : "Mi línea de avales",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Línea de avales de bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaLineasDeAvalNoRelacionadas" : [ {
+    "numeroLineaDeAvales" : "000012341234561234123412",
+    "alias" : "Mi línea de avales",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Línea de avales de bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaLibretasDinámica" : [ {
+    "numeroLibretaDinamica" : "000012341234561234123412",
+    "alias" : "Mi libreta dinámica",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Libreta dinámica de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaLibretasDinámicaNoRelacionadas" : [ {
+    "numeroLibretaDinamica" : "000012341234561234123412",
+    "alias" : "Mi libreta dinámica",
+    "saldoDisponible" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Libreta dinámica de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaCarterasGestionada" : [ {
+    "numeroCartera" : "000012341234561234123412",
+    "alias" : "Mi cartera",
+    "limite" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cartera de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaCarterasGestionadaNoRelacionadas" : [ {
+    "numeroCartera" : "000012341234561234123412",
+    "alias" : "Mi cartera",
+    "limite" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "Cartera de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaLPPs" : [ {
+    "numeroLPP" : "000012341234561234123412",
+    "alias" : "Mi LPP",
+    "capitalConcedido" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "deudaPendiente" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "LPP de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ],
+  "listaLPPsNoRelacionados" : [ {
+    "numeroLPP" : "000012341234561234123412",
+    "alias" : "Mi LPP",
+    "capitalConcedido" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "deudaPendiente" : {
+      "importe" : 1000.5,
+      "decimales" : 2,
+      "nombreMoneda" : "EUR"
+    },
+    "saldoInformado" : true,
+    "nombreProductoComercial" : "LPP de Bankia",
+    "codigoProductoUrsus" : "0000",
+    "codigoProductoCPP" : "1111"
+  } ]
+}
