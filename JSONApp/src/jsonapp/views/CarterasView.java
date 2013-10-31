@@ -27,7 +27,7 @@ public class CarterasView implements Serializable {
 
     public CarterasView() {
         numeroCartera = "000012341234561234123412";
-        alias = "Mi cartera";
+        alias = "Mi cartera personal";
         limite = new ImporteMonetarioView();
         saldoInformado = true;
         codigoProductoComercial = new CodigoProductoView();

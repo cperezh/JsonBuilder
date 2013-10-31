@@ -28,7 +28,7 @@ public class LPPView implements Serializable {
 
     public LPPView() {
         numeroLPP = "000012341234561234123412";
-        alias = "Mi LPP";
+        alias = "Mi LPP personal";
         capitalConcedido = new ImporteMonetarioView();
         deudaPendiente = new ImporteMonetarioView();
         saldoInformado = true;
