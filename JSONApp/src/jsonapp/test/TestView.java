@@ -6,6 +6,7 @@
 
 package jsonapp.test;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ import java.util.List;
  *
  * @author carlos.perez
  */
-public class TestView {
+public class TestView implements Serializable{
     
     List<Test> listaTest;
 
