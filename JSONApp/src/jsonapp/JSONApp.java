@@ -7,8 +7,10 @@ package jsonapp;
 
 import java.io.File;
 import java.io.IOException;
+import jsonapp.escenarioCliente.ArbolContenidosView;
 import jsonapp.posicionGlobal.model.SolicitarIdentificadorVistaModel;
 import jsonapp.posicionGlobal.view.MostrarVistaPosiciónGlobalView;
+import jsonapp.test.TestView;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;
 
@@ -17,7 +19,7 @@ import org.codehaus.jackson.map.SerializationConfig;
  * @author carlos.perez
  */
 public class JSONApp {
-    
+
     private final static String PATH_JSONS = "C:\\Personal\\proyectos\\JSONApp\\jsons\\";
 
     /**
@@ -26,8 +28,8 @@ public class JSONApp {
      */
     public static void main(String[] args) throws IOException {
 
-        JSONApp.generarJsonMostrarMostrarVistaPosiciónGlobalView();
-        JSONApp.generarJsonSolicitarIdentificadorVistaModel();
+        JSONApp.generarObjetoArbolContenidosView();
+        //JSONApp.generarJsonTest();
 
     }
 
@@ -40,7 +42,7 @@ public class JSONApp {
         generarJson(mostrarVistaPosicionGlobalView);
 
     }
-    
+
     public static void generarJsonSolicitarIdentificadorVistaModel() throws IOException {
 
         SolicitarIdentificadorVistaModel solicitarIdentificadorVistaModel;
@@ -50,14 +52,58 @@ public class JSONApp {
         generarJson(solicitarIdentificadorVistaModel);
 
     }
+    
+    public static void generarJsonTest() throws IOException {
 
+        TestView testView;
+
+        testView = new TestView();
+
+        generarJson(testView);
+
+    }
+
+    public static ArbolContenidosView generarObjetoArbolContenidosView() throws IOException {
+
+        ArbolContenidosView arbolContenidosView;
+
+        arbolContenidosView = new ArbolContenidosView();
+
+        arbolContenidosView = (ArbolContenidosView) JSONApp.generarObjeto(arbolContenidosView);
+
+        return arbolContenidosView;
+    }
+
+    /**
+     * Genera un Json de un objeto
+     *
+     * @param objeto
+     * @throws IOException
+     */
     private static void generarJson(Object objeto) throws IOException {
 
         ObjectMapper jsonMapper = new ObjectMapper();
 
         jsonMapper.configure(SerializationConfig.Feature.INDENT_OUTPUT, true);
-        jsonMapper.writeValue(new File(PATH_JSONS+objeto.getClass().getSimpleName()+".json"), objeto);
+        jsonMapper.writeValue(new File(PATH_JSONS + objeto.getClass().getSimpleName() + ".json"), objeto);
 
+    }
+
+    /**
+     * Generar un objecto de un Json.
+     *
+     * @param claseObjecto la clase del objeto que queremos generar. Se pasa
+     * inicializado y lo devuelve relleno. Busca un Json que se llame como la
+     * clase, en la ruta de generación de los Json.
+     * @return
+     * @throws IOException
+     */
+    private static Object generarObjeto(Object claseObjecto) throws IOException {
+
+        ObjectMapper mapper = new ObjectMapper();
+        claseObjecto = mapper.readValue(new File(PATH_JSONS + claseObjecto.getClass().getSimpleName() + ".json"), claseObjecto.getClass());
+
+        return claseObjecto;
     }
 
 }
