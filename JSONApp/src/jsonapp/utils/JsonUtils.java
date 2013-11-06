@@ -52,5 +52,4 @@ public class JsonUtils {
 
         return claseObjecto;
     }
-
-}
+ }
