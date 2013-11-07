@@ -48,19 +48,7 @@
     "codigoProductoUrsus" : "0000",
     "codigoProductoCPP" : "1111"
   } ],
-  "listaFondosNoRelacionados" : [ {
-    "numeroFondo" : "102000002858",
-    "alias" : "MADRID GESTION ACTIVA 25",
-    "saldoDisponible" : {
-      "importe" : 1000.5,
-      "decimales" : 2,
-      "nombreMoneda" : "EUR"
-    },
-    "saldoInformado" : true,
-    "nombreProductoComercial" : "Bankia Fondos",
-    "codigoProductoUrsus" : "0000",
-    "codigoProductoCPP" : "1111"
-  } ],
+  "listaFondosNoRelacionados" : [ ],
   "listaCuentasExtranjero" : [ {
     "numeroDeCuenta" : "ES9120380000060320012667",
     "alias" : "Mi cuenta",
@@ -79,24 +67,7 @@
     "codigoProductoUrsus" : "0000",
     "codigoProductoCPP" : "1111"
   } ],
-  "listaCuentasExtranjeroNoRelacionadas" : [ {
-    "numeroDeCuenta" : "ES9120380000060320012667",
-    "alias" : "Mi cuenta",
-    "saldoReal" : {
-      "importe" : 1000.5,
-      "decimales" : 2,
-      "nombreMoneda" : "EUR"
-    },
-    "saldoDisponible" : {
-      "importe" : 1000.5,
-      "decimales" : 2,
-      "nombreMoneda" : "EUR"
-    },
-    "saldoInformado" : true,
-    "nombreProductoComercial" : "Cuenta corriente",
-    "codigoProductoUrsus" : "0000",
-    "codigoProductoCPP" : "1111"
-  } ],
+  "listaCuentasExtranjeroNoRelacionadas" : [ ],
   "listaPlazosEnDivisas" : [ {
     "numeroDeDeposito" : "17789201051743",
     "alias" : "Deposito compartido",
@@ -223,7 +194,7 @@
   } ],
   "listaCartera" : [ {
     "numeroCartera" : "000012341234561234123412",
-    "alias" : "Mi cartera",
+    "alias" : "Mi cartera personal",
     "limite" : {
       "importe" : 1000.5,
       "decimales" : 2,
@@ -236,7 +207,7 @@
   } ],
   "listaCarteraNoRelacionadas" : [ {
     "numeroCartera" : "000012341234561234123412",
-    "alias" : "Mi cartera",
+    "alias" : "Mi cartera personal",
     "limite" : {
       "importe" : 1000.5,
       "decimales" : 2,
@@ -497,7 +468,7 @@
   } ],
   "listaCarterasGestionada" : [ {
     "numeroCartera" : "000012341234561234123412",
-    "alias" : "Mi cartera",
+    "alias" : "Mi cartera personal",
     "limite" : {
       "importe" : 1000.5,
       "decimales" : 2,
@@ -510,7 +481,7 @@
   } ],
   "listaCarterasGestionadaNoRelacionadas" : [ {
     "numeroCartera" : "000012341234561234123412",
-    "alias" : "Mi cartera",
+    "alias" : "Mi cartera personal",
     "limite" : {
       "importe" : 1000.5,
       "decimales" : 2,
@@ -523,7 +494,7 @@
   } ],
   "listaLPPs" : [ {
     "numeroLPP" : "000012341234561234123412",
-    "alias" : "Mi LPP",
+    "alias" : "Mi LPP personal",
     "capitalConcedido" : {
       "importe" : 1000.5,
       "decimales" : 2,
@@ -541,7 +512,7 @@
   } ],
   "listaLPPsNoRelacionados" : [ {
     "numeroLPP" : "000012341234561234123412",
-    "alias" : "Mi LPP",
+    "alias" : "Mi LPP personal",
     "capitalConcedido" : {
       "importe" : 1000.5,
       "decimales" : 2,

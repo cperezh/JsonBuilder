@@ -19,7 +19,7 @@ public class ArbolContenidosView implements Serializable{
     
     public ArbolContenidosView(){
         arbolContenidos = new ArrayList<>();
-    }
+    }   
 
     public List<Contenido> getArbolContenidos() {
         return arbolContenidos;

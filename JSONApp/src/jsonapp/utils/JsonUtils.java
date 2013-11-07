@@ -8,8 +8,11 @@ package jsonapp.utils;
 import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.map.SerializationConfig;
+import org.codehaus.jackson.map.type.TypeFactory;
 
 /**
  *
@@ -45,11 +48,21 @@ public class JsonUtils {
      * generación de los Json.
      * @throws IOException
      */
-    public static <T extends Serializable> T generarObjeto(T claseObjecto) throws IOException {
+    public static <T> T generarObjeto(T claseObjecto) throws IOException {
 
         ObjectMapper mapper = new ObjectMapper();
         claseObjecto = (T) mapper.readValue(new File(PATH_JSONS + claseObjecto.getClass().getSimpleName() + ".json"), claseObjecto.getClass());
 
         return claseObjecto;
+    }
+    
+    public static <T> List<T> generarListaObjeto(T claseObjecto) throws IOException {
+
+        List<T> lista;
+        ObjectMapper mapper = new ObjectMapper();
+        TypeFactory typeFactory = TypeFactory.defaultInstance();
+        lista = mapper.readValue(new File(PATH_JSONS + claseObjecto.getClass().getSimpleName() + ".json"), typeFactory.constructCollectionType(ArrayList.class, claseObjecto.getClass()));
+
+        return lista;
     }
  }

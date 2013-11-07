@@ -6,7 +6,10 @@
 package jsonapp;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import jsonapp.escenarioCliente.ArbolContenidosView;
+import jsonapp.escenarioCliente.Contenido;
 import jsonapp.posicionGlobal.model.SolicitarIdentificadorVistaModel;
 import jsonapp.posicionGlobal.view.MostrarVistaPosiciónGlobalView;
 import jsonapp.test.TestView;
@@ -18,15 +21,15 @@ import jsonapp.utils.JsonUtils;
  */
 public class JSONApp {
 
-
-
     /**
      * @param args the command line arguments
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
 
-        JSONApp.generarObjetoArbolContenidosView();
+       // JSONApp.generarObjetoArbolContenidosView();
+        JSONApp.generarObjetoArbolContenidosView2();
+       // JSONApp.generarJsonArbolContenidosView2();
         //JSONApp.generarJsonTest();
 
     }
@@ -71,4 +74,16 @@ public class JSONApp {
 
         return arbolContenidosView;
     }
+
+    public static List<Contenido> generarObjetoArbolContenidosView2() throws IOException {
+
+        List<Contenido> listaContenidos;
+
+        listaContenidos = JsonUtils.generarListaObjeto(new Contenido());
+
+        return listaContenidos;
+    }
+    
+       
+    
 }

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 
+ *
  * @author carlos.perez
  */
 public class Contenido {
@@ -28,8 +28,8 @@ public class Contenido {
     String active;
     String visibleChildren;
     List<Contenido> children;
-    
-    public Contenido(){
+
+    public Contenido() {
         children = new ArrayList<>();
     }
 
@@ -144,5 +144,11 @@ public class Contenido {
     public void setChildren(List<Contenido> children) {
         this.children = children;
     }
+
+    @Override
+    public String toString() {
+        return "Contenido{" + "name=" + name + '}';
+    }
     
+
 }
