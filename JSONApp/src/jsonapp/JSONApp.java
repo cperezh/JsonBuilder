@@ -6,7 +6,6 @@
 package jsonapp;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import jsonapp.escenarioCliente.ArbolContenidosView;
 import jsonapp.escenarioCliente.Contenido;
