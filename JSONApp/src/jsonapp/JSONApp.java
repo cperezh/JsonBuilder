@@ -5,10 +5,12 @@
  */
 package jsonapp;
 
+import jsonapp.escenarioCliente.ObtenerDatosURLsModel;
 import java.io.IOException;
 import java.util.List;
 import jsonapp.escenarioCliente.ArbolContenidosView;
 import jsonapp.escenarioCliente.Contenido;
+import jsonapp.escenarioCliente.PresentarEscenarioClienteView;
 import jsonapp.posicionGlobal.model.SolicitarIdentificadorVistaModel;
 import jsonapp.posicionGlobal.view.MostrarVistaPosiciónGlobalView;
 import jsonapp.test.TestView;
@@ -27,9 +29,12 @@ public class JSONApp {
     public static void main(String[] args) throws IOException {
 
        // JSONApp.generarObjetoArbolContenidosView();
-        JSONApp.generarObjetoArbolContenidosView2();
+       // JSONApp.generarObjetoArbolContenidosView2();
        // JSONApp.generarJsonArbolContenidosView2();
         //JSONApp.generarJsonTest();
+        JSONApp.generarJsonPresentarEscenarioClienteView();
+        //JSONApp.generarJsonObtenerDatosURLsModel();
+        //JSONApp.generarJsonMostrarMostrarVistaPosiciónGlobalView();
 
     }
 
@@ -83,6 +88,22 @@ public class JSONApp {
         return listaContenidos;
     }
     
-       
+     public static void generarJsonPresentarEscenarioClienteView() throws IOException{
+
+        PresentarEscenarioClienteView presentarEscenarioClienteView;
+
+        presentarEscenarioClienteView = new PresentarEscenarioClienteView();
+
+        JsonUtils.generarJson(presentarEscenarioClienteView);
+
+    }  
+
+    private static void generarJsonObtenerDatosURLsModel() throws IOException {
+        ObtenerDatosURLsModel obtenerDatosURLsModel;
+
+        obtenerDatosURLsModel = new ObtenerDatosURLsModel();
+
+        JsonUtils.generarJson(obtenerDatosURLsModel);
+    }
     
 }
